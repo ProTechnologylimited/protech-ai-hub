@@ -1,2 +1,59 @@
 # protech-ai-hub
 an ai hub for digital creators, web3 developers, founders, investors and innovators.
+
+# ------------------------------------------------------------------
+# Protech AI Hub - environment variables (PLACEHOLDERS ONLY)
+# Copy to .env.local for local work. Never commit real values.
+# ------------------------------------------------------------------
+
+# Public base URL of the deployed app, no trailing slash. Used for the
+# Mini App manifest, embed metadata and as the Quick Auth audience domain
+# (the host part). Not a secret.
+NEXT_PUBLIC_APP_URL=https://your-app.vercel.app
+
+# PostgreSQL connection string (server only). Include sslmode if your
+# provider requires it.
+DATABASE_URL=postgresql://USER:PASSWORD@HOST:5432/DBNAME?sslmode=require
+
+# --- AI provider (server only) ---------------------------------------
+# anthropic | openai-compatible
+AI_PROVIDER=anthropic
+AI_API_KEY=replace-with-your-provider-api-key
+# Model name. Check your provider's current model list.
+AI_MODEL=claude-haiku-5-5
+# Optional. Override the provider base URL (required for openai-compatible,
+# e.g. https://api.openai.com/v1).
+AI_BASE_URL=
+# Provider request timeout in milliseconds.
+AI_TIMEOUT_MS=30000
+
+# --- Cost controls ----------------------------------------------------
+# Set to false to temporarily disable all AI generation.
+GENERATION_ENABLED=true
+# Generations allowed per user per UTC day.
+DAILY_GENERATION_LIMIT=10
+# Max total characters of user-supplied input per request.
+MAX_INPUT_CHARS=3000
+# Max tokens the model may produce per request.
+MAX_OUTPUT_TOKENS=600
+# Burst throttle: max generation requests per user per minute.
+RATE_LIMIT_PER_MINUTE=5
+# Max saved generations kept per user (oldest are removed).
+HISTORY_MAX_PER_USER=200
+
+# --- Farcaster manifest (from the Mini App manifest tool) ------------
+# Domain association, generated after deploying. See README.
+FARCASTER_ACCOUNT_ASSOCIATION_HEADER=
+FARCASTER_ACCOUNT_ASSOCIATION_PAYLOAD=
+FARCASTER_ACCOUNT_ASSOCIATION_SIGNATURE=
+
+# --- Development-only authentication bypass --------------------------
+# Honoured ONLY when NODE_ENV is not "production". Leave false everywhere
+# except your local machine.
+DEV_AUTH_ENABLED=false
+NEXT_PUBLIC_DEV_AUTH=false
+NEXT_PUBLIC_DEV_FID=1
+
+# --- Optional: database integration tests ----------------------------
+# Point at a disposable database. Tests are skipped when empty.
+TEST_DATABASE_URL=
