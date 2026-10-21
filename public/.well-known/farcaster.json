@@ -1,0 +1,26 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "Protech AI Hub",
+    "homeUrl": "http://localhost:3000",
+    "iconUrl": "http://localhost:3000/api/icon",
+    "imageUrl": "http://localhost:3000/api/og",
+    "buttonTitle": "Open Protech AI Hub",
+    "splashImageUrl": "http://localhost:3000/api/splash",
+    "splashBackgroundColor": "#0E0D1A",
+    "subtitle": "AI drafts for Farcaster",
+    "description": "Draft Farcaster casts, replies and project promotion with AI, then review, edit and keep your history.",
+    "primaryCategory": "productivity",
+    "tags": [
+      "ai",
+      "writing",
+      "content",
+      "web3",
+      "marketing"
+    ],
+    "tagline": "Create Smarter. Build Faster.",
+    "ogTitle": "Protech AI Hub",
+    "ogDescription": "AI drafts for casts, replies and project promotion.",
+    "ogImageUrl": "http://localhost:3000/api/og"
+  }
+}
