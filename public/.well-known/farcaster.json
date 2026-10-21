@@ -1,26 +1,25 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjMzMjgwOTksInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHgwMEQwNzY0MmQ5MDk2NUEzODg1NUFhMUJkNzFBMjdhMDgyMDg2YWIxIn0",
+    "payload": "eyJkb21haW4iOiJwcm90ZWNoLWFpLWh1Yi52ZXJjZWwuYXBwIn0",
+    "signature": "KKtvwFsY9GjfWhxx9LwubNM5rhldxfs81efNd/+q0/snoPYIX/6RYZb7m+JqYyGqIh0WKBm929zP8rYBjpGxnhw="
+  },
   "miniapp": {
     "version": "1",
     "name": "Protech AI Hub",
-    "homeUrl": "http://localhost:3000",
-    "iconUrl": "http://localhost:3000/api/icon",
-    "imageUrl": "http://localhost:3000/api/og",
+    "homeUrl": "https://protech-ai-hub.vercel.app",
+    "iconUrl": "https://protech-ai-hub.vercel.app/api/icon",
+    "imageUrl": "https://protech-ai-hub.vercel.app/api/og",
     "buttonTitle": "Open Protech AI Hub",
-    "splashImageUrl": "http://localhost:3000/api/splash",
+    "splashImageUrl": "https://protech-ai-hub.vercel.app/api/splash",
     "splashBackgroundColor": "#0E0D1A",
     "subtitle": "AI drafts for Farcaster",
     "description": "Draft Farcaster casts, replies and project promotion with AI, then review, edit and keep your history.",
     "primaryCategory": "productivity",
-    "tags": [
-      "ai",
-      "writing",
-      "content",
-      "web3",
-      "marketing"
-    ],
+    "tags": ["ai", "writing", "content", "web3", "marketing"],
     "tagline": "Create Smarter. Build Faster.",
     "ogTitle": "Protech AI Hub",
     "ogDescription": "AI drafts for casts, replies and project promotion.",
-    "ogImageUrl": "http://localhost:3000/api/og"
+    "ogImageUrl": "https://protech-ai-hub.vercel.app/api/og"
   }
 }
